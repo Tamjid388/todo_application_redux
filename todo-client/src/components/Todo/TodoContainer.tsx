@@ -2,13 +2,20 @@ import React from 'react'
 import { Input } from '../ui/input'
 import { Button } from '../ui/button'
 import TodoCard from './TodoCard'
+import AddTodoModal from './AddTodoModal'
+import { Filter } from './Filter'
 
 export default function TodoContainer() {
   return (
     <div>
-      <div className='space-y-4 space-x-4'>
-        <Button>Add Todo</Button>
-        <Button>Filter</Button>
+      <div className='space-y-4 flex justify-between'>
+       
+        <AddTodoModal/>
+       
+
+
+
+        <Filter/>
       </div>
       <div className='bg-purple-400 px-6 py-8 w-full h-full
        rounded-xl space-y-2'>
